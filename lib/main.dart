@@ -9,9 +9,13 @@ class Kurdish extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        body: Center(child: Text('HELLO KURDISTAN!')),
+        body: Column(
+          children: const [
+            Center(child: Text('HELLO KURDISTAN!')),
+          ],
+        ),
       ),
     );
   }
