@@ -18,8 +18,6 @@ List<Map<String, dynamic>> students = [
   {
     "id": 3,
     "first_name": "Sulaymaniyah",
-    "description":
-        "Sulaymaniyah (Arabic: السليمانية, romanized: as-Sulaymāniyyah[3] Kurdish: سلێمانی, romanized: Silêmanî,[4][5]), also called Slemani, is a city in the east of the Kurdistan Region of Iraq, not far from the Iran–Iraq border. It is surrounded by the Azmar, Goizha and Qaiwan Mountains in the northeast, Baranan Mountain in the south and the Tasluja Hills in the west. The city has a semi-arid climate with very hot dry summers and cold wet winters.",
     "image":
         "https://rest.techbehemoths.com/storage/images/countries/iraq/sulaymaniyah/603f775a75af1.jpg"
   },

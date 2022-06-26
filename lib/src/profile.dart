@@ -1,5 +1,4 @@
 import 'package:assignment1/mock/class.dart';
-import 'package:assignment1/mock/studetns_info.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatelessWidget {
@@ -42,7 +41,7 @@ class Profile extends StatelessWidget {
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: Wrap(
-                children: [Text(student.description!)],
+                children: [Text(student.description ?? 'no description')],
               ),
             )
           ],
