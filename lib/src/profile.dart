@@ -7,100 +7,45 @@ class Profile extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          leading: IconButton(
-            icon: const Icon(Icons.arrow_back),
-            onPressed: () {
-              Navigator.of(context).pop();
-            },
-          ),
-        ),
-        body: SizedBox(
-          width: double.infinity,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: [
-              ClipOval(
-                child: SizedBox(
-                  height: 200,
-                  width: 200,
-                  child: Hero(
-                      tag: 'profile',
-                      child: Image.network(students[ind!]['image'])),
-                ),
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(students[ind!]['first_name']),
+      ),
+      body: SizedBox(
+        width: double.infinity,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: [
+            SizedBox(
+              height: 300,
+              width: 400,
+              child: Image.network(
+                students[ind!]['image'],
+                fit: BoxFit.cover,
               ),
-              Padding(
-                padding: const EdgeInsets.all(20.0),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Text(
-                      students[ind!]['first_name'],
-                      style: const TextStyle(fontSize: 25),
-                    ),
-                    const SizedBox(
-                      width: 10,
-                    ),
-                    Text(
-                      students[ind!]['last_name'],
-                      style: const TextStyle(fontSize: 25),
-                    ),
-                  ],
-                ),
-              ),
-              Text(
-                students[ind!]['gender'],
-                style: const TextStyle(fontSize: 20),
-              ),
-              Expanded(
-                  child: GridView.count(
-                padding: const EdgeInsets.all(20),
-                crossAxisSpacing: 10,
-                mainAxisSpacing: 10,
-                crossAxisCount: 2,
-                children: <Widget>[
-                  Container(
-                    child: Image.network(
-                      students[ind!]['image'],
-                      fit: BoxFit.fill,
-                    ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(20.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    students[ind!]['first_name'],
+                    style: const TextStyle(fontSize: 25),
                   ),
-                  Container(
-                    child: Image.network(
-                      students[ind!]['image'],
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Container(
-                    child: Image.network(
-                      students[ind!]['image'],
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Container(
-                    child: Image.network(
-                      students[ind!]['image'],
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Container(
-                    child: Image.network(
-                      students[ind!]['image'],
-                      fit: BoxFit.fill,
-                    ),
-                  ),
-                  Container(
-                    child: Image.network(
-                      students[ind!]['image'],
-                      fit: BoxFit.fill,
-                    ),
+                  const SizedBox(
+                    height: 20,
                   ),
                 ],
-              ))
-            ],
-          ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Wrap(
+                children: [Text(students[ind!]['description'])],
+              ),
+            )
+          ],
         ),
       ),
     );

@@ -1,92 +1,34 @@
 List<Map<String, dynamic>> students = [
   {
     "id": 1,
-    "first_name": "Lee",
-    "last_name": "Juares",
-    "email": "ljuares0@sourceforge.net",
-    "gender": "Male",
+    "first_name": "Duhok",
+    "description":
+        "The city's origin dates back to the Stone Age, and it became part of the Assyrian Empire, then the Babylonian Empire before it fell into the hands of Achaemenid Empire after the Fall of Babylon",
     "image":
-        "https://thumbs.dreamstime.com/z/portrait-passport-elderly-old-man-mustache-bald-man-plaid-shirt-78973219.jpg"
+        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/City_of_Duhok.jpg/800px-City_of_Duhok.jpg"
   },
   {
     "id": 2,
-    "first_name": "Madeleine",
-    "last_name": "Appleyard",
-    "email": "mappleyard1@noaa.gov",
-    "gender": "Female",
+    "first_name": "Erbil",
+    "description":
+        "Erbil, also called Hawler (Kurdish: ھەولێر ,Hewlêr[3] Arabic: أربيل, romanized: Arbīl,[4] Syriac: ܐܲܪܒܹܝܠ,[5] or Arbel)[6] and known in ancient history as Arbela, is the capital and most populated city in the Kurdistan Region of Iraq.[7] There is no current census of the city and official population statistics are not available, its population is estimated to be around 1,600,000.[8]",
     "image":
-        "https://thumbs.dreamstime.com/z/portrait-documents-passport-photo-young-female-natural-look-140680578.jpg"
+        "https://www.richardwilding.com/wp-content/uploads/2015/09/Richard-Wilding-Kurdistan-Erbil-Citadel-003.jpg"
   },
   {
     "id": 3,
-    "first_name": "Camey",
-    "last_name": "Rissom",
-    "email": "crissom2@nih.gov",
-    "gender": "Male",
+    "first_name": "Sulaymaniyah",
+    "description":
+        "Sulaymaniyah (Arabic: السليمانية, romanized: as-Sulaymāniyyah[3] Kurdish: سلێمانی, romanized: Silêmanî,[4][5]), also called Slemani, is a city in the east of the Kurdistan Region of Iraq, not far from the Iran–Iraq border. It is surrounded by the Azmar, Goizha and Qaiwan Mountains in the northeast, Baranan Mountain in the south and the Tasluja Hills in the west. The city has a semi-arid climate with very hot dry summers and cold wet winters.",
     "image":
-        "https://thumbs.dreamstime.com/z/passport-photo-african-american-mature-adult-man-passport-photo-african-american-mature-adult-men-isolated-white-168920663.jpg"
+        "https://rest.techbehemoths.com/storage/images/countries/iraq/sulaymaniyah/603f775a75af1.jpg"
   },
   {
     "id": 4,
-    "first_name": "Maxwell",
-    "last_name": "Godden",
-    "email": "mgodden3@soup.io",
-    "gender": "Male",
+    "first_name": "Halabja",
+    "description":
+        "Halabja (Kurdish: هەڵەبجە, romanized: Helebce, Arabic: حلبجة[3]) is a city in the Kurdistan Region of Iraq and the capital of Halabja Governorate, located about 240 km (150 mi) northeast of Baghdad and 14 km (9 mi) from the Iranian border.",
     "image":
-        "https://thumbs.dreamstime.com/z/passport-photo-latin-american-man-beard-passport-photo-latin-american-man-beard-isolated-white-background-201648583.jpg"
-  },
-  {
-    "id": 5,
-    "first_name": "Demetre",
-    "last_name": "Hunnaball",
-    "email": "dhunnaball4@blog.com",
-    "gender": "Male",
-    "image":
-        "https://thumbs.dreamstime.com/z/passport-picture-hispanic-businessman-suit-white-background-cut-out-54531886.jpg"
-  },
-  {
-    "id": 6,
-    "first_name": "De",
-    "last_name": "Jura",
-    "email": "djura5@free.fr",
-    "gender": "Female",
-    "image":
-        "https://thumbs.dreamstime.com/z/woman-id-portrait-female-middle-aged-official-paper-identity-card-passport-driving-license-woman-id-portrait-female-218827073.jpg"
-  },
-  {
-    "id": 7,
-    "first_name": "Cordie",
-    "last_name": "Boydell",
-    "email": "cboydell6@upenn.edu",
-    "gender": "Female",
-    "image":
-        "https://thumbs.dreamstime.com/z/passport-photo-smiling-mexican-female-young-adult-isolated-white-background-cut-out-passport-photo-smiling-220773250.jpg"
-  },
-  {
-    "id": 8,
-    "first_name": "Violet",
-    "last_name": "Somes",
-    "email": "vsomes7@si.edu",
-    "gender": "Female",
-    "image":
-        "https://thumbs.dreamstime.com/z/passport-photo-laughing-mexican-female-young-adult-isolated-white-background-cut-out-194267312.jpg"
-  },
-  {
-    "id": 9,
-    "first_name": "Tid",
-    "last_name": "Tombs",
-    "email": "ttombs8@columbia.edu",
-    "gender": "Agender",
-    "image":
-        "https://thumbs.dreamstime.com/z/frontal-male-passport-photo-isolated-white-background-eu-standardization-frontal-male-passport-photo-isolated-white-149548031.jpg"
-  },
-  {
-    "id": 10,
-    "first_name": "Moro",
-    "last_name": "Sposito",
-    "email": "msposito9@rediff.com",
-    "gender": "Female",
-    "image":
-        "https://thumbs.dreamstime.com/z/passport-document-id-photo-business-man-portrait-concept-young-handsome-stylish-guy-formal-wear-white-background-119717703.jpg"
+        "https://i.pinimg.com/originals/ea/6c/48/ea6c48a01ace555abdc2695db1026f84.jpg"
   },
 ];
