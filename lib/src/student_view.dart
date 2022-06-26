@@ -48,7 +48,9 @@ class StudentView extends StatelessWidget {
                               child: GestureDetector(
                                 onTap: () => Navigator.of(context).push(
                                   MaterialPageRoute(
-                                    builder: (context) => Profile(ind: index),
+                                    builder: (context) => Profile(
+                                      student: student[index],
+                                    ),
                                   ),
                                 ),
                                 child: Container(
