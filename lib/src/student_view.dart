@@ -1,5 +1,5 @@
-import 'package:assignment1/mock/class.dart';
-import 'package:assignment1/mock/studetns_info.dart';
+import 'package:assignment1/mock/cities.dart';
+import 'package:assignment1/mock/class_for_cities.dart';
 import 'package:assignment1/src/profile.dart';
 import 'package:flutter/material.dart';
 
@@ -15,14 +15,13 @@ class StudentView extends StatelessWidget {
             Expanded(
               child: ListView.builder(
                 padding: const EdgeInsets.only(bottom: 150),
-                itemCount: students.length,
+                itemCount: cities.length,
                 itemBuilder: ((context, index) {
-                  List<StudentModel> student = students.map(
+                  List<KurdishCities> city = cities.map(
                     (e) {
-                      return StudentModel.fromMap(e);
+                      return KurdishCities.fromMap(e);
                     },
                   ).toList();
-
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: SizedBox(
@@ -37,7 +36,8 @@ class StudentView extends StatelessWidget {
                                   width: double.infinity,
                                   height: 250,
                                   child: Image.network(
-                                    students[index]['image'],
+                                    city[index].image ??
+                                        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/City_of_Duhok.jpg/800px-City_of_Duhok.jpg",
                                     fit: BoxFit.cover,
                                   )),
                             ),
@@ -49,7 +49,7 @@ class StudentView extends StatelessWidget {
                                 onTap: () => Navigator.of(context).push(
                                   MaterialPageRoute(
                                     builder: (context) => Profile(
-                                      student: student[index],
+                                      city: city[index],
                                     ),
                                   ),
                                 ),
@@ -62,7 +62,7 @@ class StudentView extends StatelessWidget {
                                   height: 50,
                                   child: Center(
                                     child: Text(
-                                      student[index].firstName,
+                                      city[index].name,
                                       style: const TextStyle(
                                           color: Colors.white, fontSize: 24),
                                     ),

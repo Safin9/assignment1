@@ -1,9 +1,10 @@
-import 'package:assignment1/mock/class.dart';
+import 'package:assignment1/mock/class_for_cities.dart';
 import 'package:flutter/material.dart';
 
 class Profile extends StatelessWidget {
-  const Profile({Key? key, required this.student}) : super(key: key);
-  final StudentModel student;
+  const Profile({Key? key, required this.city}) : super(key: key);
+  // final StudentModel student;
+  final KurdishCities city;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -19,7 +20,8 @@ class Profile extends StatelessWidget {
                   height: 300,
                   width: 400,
                   child: Image.network(
-                    student.image!,
+                    city.image ??
+                        "https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/City_of_Duhok.jpg/800px-City_of_Duhok.jpg",
                     fit: BoxFit.cover,
                   ),
                 ),
@@ -39,7 +41,7 @@ class Profile extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      student.firstName,
+                      city.name,
                       style: const TextStyle(fontSize: 25),
                     ),
                     const SizedBox(
@@ -51,7 +53,7 @@ class Profile extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: Wrap(
-                  children: [Text(student.description ?? 'no description')],
+                  children: [Text(city.description)],
                 ),
               )
             ],
