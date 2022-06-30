@@ -7,6 +7,11 @@ class StudentView extends StatelessWidget {
   const StudentView({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
+    List<KurdishCities> city = cities.map(
+      (e) {
+        return KurdishCities.fromMap(e);
+      },
+    ).toList();
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(title: const Text('WeCode for View')),
@@ -15,13 +20,8 @@ class StudentView extends StatelessWidget {
             Expanded(
               child: ListView.builder(
                 padding: const EdgeInsets.only(bottom: 150),
-                itemCount: cities.length,
+                itemCount: city.length,
                 itemBuilder: ((context, index) {
-                  List<KurdishCities> city = cities.map(
-                    (e) {
-                      return KurdishCities.fromMap(e);
-                    },
-                  ).toList();
                   return Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: SizedBox(
